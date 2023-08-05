@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<title>O Mandaloriano</title>
+<link rel="icon" type="image/x-icon" href="https://static.wikia.nocookie.net/fortnite_gamepedia/images/2/24/T-Banners-Icons-S15-CosmosA-L.png/revision/latest?cb=20201205144329">
+<link href="https://fonts.cdnfonts.com/css/the-mandalorian" rel="stylesheet">
+                
+<style>
+
+@import 
+url('https://fonts.cdnfonts.com/css/the-mandalorian');
+                
+h1{
+font-family: The Mandalorian;
+font-size: 900%;
+   text-align: center ;
+}
+
+body{
+background-color: rgb(207, 206, 212);  
+}
+
+img {
+width: 75%;
+height:auto; 
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+button { 
+display: block;
+margin-left: auto;
+margin-right: auto;;
+border: 2px solid red;
+border-radius: 12px;
+width: 6cm;
+height: 1cm;
+line-height: 0px;
+margin-top:-60px;
+}
+
+</style>
+
+<head>
+    <h1>O Mandaloriano</h1>
+</head>
+
+<body>
+
+
+<button onclick='changeImage()'>Change Image</button>
+
+<br><br>
+
+<div >
+    <img src='https://ultraverso.com.br/wp-content/uploads/2023/02/Screen-Shot-2022-01-26-at-6.27.38-PM1.png' id='ImgConteiner'>
+</div>
+
+<script>
+    const img = document.getElementById('ImgConteiner');
+    let currentImgIdx = 1;
+    const images = [ 
+        src="https://ultraverso.com.br/wp-content/uploads/2023/02/Screen-Shot-2022-01-26-at-6.27.38-PM1.png",
+        src="https://img.olhardigital.com.br/wp-content/uploads/2023/03/mandalorian.png",
+        src="https://hips.hearstapps.com/hmg-prod/images/index-mandalorian-1663006313.jpg?crop=0.888xw:1xh;center,top",
+        src="https://cinebuzz.uol.com.br/media/uploads/the_mandalorian_4a_temporada_ja_esta_em_desenvolvimento_diz_site_jF1Abr9.jpg",
+        src="https://media.gq-magazine.co.uk/photos/5dee42fb271d0f00080ca8f4/16:9/w_2560%2Cc_limit/20191209-The-Mandalorian.jpg",
+        src="https://s.yimg.com/ny/api/res/1.2/7oLoX2q0OLJnIUVfS9.52w--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTQzNA--/https://s.yimg.com/os/creatr-uploaded-images/2020-12/d2026e70-413c-11eb-bebe-640a27271936",
+        src="https://www.pinkvilla.com/images/2023-04/1348378904_the-mandalorian-season-4_1280*720.jpg",
+        src="https://cdn.ome.lt/78lVT9bAiA-Cia_wToNG3-Dn8q8=/970x360/smart/uploads/conteudo/fotos/the-mandalorian-3a-temporada-episodio-2-recap-capa.jpg",
+        src="https://www.coxinhanerd.com.br/wp-content/uploads/2020/05/fa-encontra-microfone-em-cena-do-4o-episodio-de-the-mandalorian.jpg",
+        src="https://observatoriodatv.uol.com.br/wp-content/uploads/2023/03/Capa-6.jpg",
+        src="https://i.etsystatic.com/11303023/r/il/6fec62/3191413268/il_fullxfull.3191413268_4pve.jpg"
+    
+    ]; 
+
+ 
+    
+    // Call changeImage() function on button click
+    function changeImage(){
+        if(currentImgIdx >= images.length){
+            currentImgIdx = 0;
+            // If current idx exceeds images array
+            // length, reset it to 0 again
+        }
+        img.src = images[currentImgIdx];
+        currentImgIdx++;
+        // Increment current image idx by 1
+        
+    }
+</script> 
+ 
+
+    </body>
+</html>
